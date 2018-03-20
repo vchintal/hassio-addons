@@ -27,13 +27,12 @@ RUN set -ex \
  && apt-key add /tmp/mopidy.gpg \
  && apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-        jq mopidy mopidy-spotify mopidy-local-sqlite \
+        jq mopidy mopidy-local-sqlite \
  && curl -L https://bootstrap.pypa.io/get-pip.py | python - \
  && pip install -U six oauth2client\
  && pip install \
 	pyasn1 \
         Mopidy-Moped \
-        Mopidy-GMusic \
  && apt-get purge --auto-remove -y \
         curl \
         gcc \

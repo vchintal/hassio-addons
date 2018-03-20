@@ -1,12 +1,12 @@
 {
     "name": "Mopidy",
-    "version": "0.2.3",
+    "version": "1.0.0",
     "slug": "mopidy",
-    "description": "mopidy music server",
-    "url": "https://github.com/bestlibre/hassio-addons/tree/master/mopidy",
+    "description": "Mopidy music server",
+    "url": "https://github.com/vchintal/hassio-addons/tree/master/mopidy",
     "startup": "application",
     "boot": "auto",
-    "image": "bestlibre/{arch}-mopidy",
+    "image": "vchintal/{arch}-mopidy",
     "options": {"local_scan": true,
 	        "options": []},
     "schema": {
